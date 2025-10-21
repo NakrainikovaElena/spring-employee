@@ -4,7 +4,7 @@ import org.springframework.stereotype.Component;
 
 @Component
 public class Car {
-    private String model = "Generic";
+    private String model = "Passenger car";
 
     public Car() {}
 

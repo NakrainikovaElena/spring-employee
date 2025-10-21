@@ -4,7 +4,7 @@ import org.springframework.stereotype.Component;
 
 @Component
 public class Pet {
-    private String name = "Buddy";
+    private String name = "Rock";
     private String type = "dog";
 
     public Pet() {}

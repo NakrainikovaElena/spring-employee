@@ -15,7 +15,7 @@ public class HelloWorld {
     @GetMapping("/hello")
     public String hello(@RequestParam(value = "name", required = false) String name) {
         if (name == null || name.isBlank()) {
-            return "Hello, world!";
+            return "Hello, world";
         }
         return "Hello, " + name;
     }

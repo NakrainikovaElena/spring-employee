@@ -38,6 +38,6 @@ public class Employee {
 
     public String introduce() {
         return "I am " + name + ", " + age + " years old, driving: "+ car.getModel()
-                + ", with pet: " + pet.getName() + " (" + pet.getType() + ")";
+                + ", with pet: " + pet.getName() + " (" + pet.getType() + ").";
     }
 }

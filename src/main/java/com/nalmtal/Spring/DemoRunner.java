@@ -21,7 +21,6 @@ public class DemoRunner implements CommandLineRunner {
         System.out.println("\n--- BEFORE SETTERS ---");
         System.out.println(employee.introduce());
 
-        // Работа сеттеров
         System.out.println("\n--- USING SETTERS ---");
         car.setModel("Sports car");
         pet.setName("Bella");

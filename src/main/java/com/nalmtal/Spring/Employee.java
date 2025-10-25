@@ -42,12 +42,12 @@ public class Employee {
 
     @PostConstruct
     public void init() {
-        System.out.println("Employee: init method");
+        System.out.println("Employee: init method.");
     }
 
     @PreDestroy
     public void destroy() {
-        System.out.println("Employee: destroy method");
+        System.out.println("Employee: destroy method.");
     }
 
     public String introduce() {

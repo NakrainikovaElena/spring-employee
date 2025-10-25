@@ -9,7 +9,7 @@ public class Car {
     private String model = "Passenger car";
 
     public Car() {
-        System.out.println("Car: object created");
+        System.out.println("Car: object created.");
     }
 
     public String getModel() {
@@ -23,12 +23,12 @@ public class Car {
 
     @PostConstruct
     public void init() {
-        System.out.println("Car: init method");
+        System.out.println("Car: init method.");
     }
 
     @PreDestroy
     public void destroy() {
-        System.out.println("Car: destroy method");
+        System.out.println("Car: destroy method.");
     }
 
     public String drive() {

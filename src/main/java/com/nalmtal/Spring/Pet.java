@@ -10,7 +10,7 @@ public class Pet {
     private String type = "dog";
 
     public Pet() {
-        System.out.println("Pet: object create");
+        System.out.println("Pet: object create.");
     }
 
     public String getName() {
@@ -37,11 +37,11 @@ public class Pet {
 
     @PostConstruct
     public void init() {
-        System.out.println("Pet: init method");
+        System.out.println("Pet: init method.");
     }
 
     @PreDestroy
     public void destroy() {
-        System.out.println("Pet: destroy method");
+        System.out.println("Pet: destroy method.");
     }
 }

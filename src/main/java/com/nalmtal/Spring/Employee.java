@@ -1,5 +1,7 @@
 package com.nalmtal.Spring;
 
+import jakarta.annotation.PostConstruct;
+import jakarta.annotation.PreDestroy;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Component;
 
@@ -18,6 +20,8 @@ public class Employee {
         this.pet = pet;
         this.name = name;
         this.age = age;
+
+        System.out.println("Employee: object create");
     }
 
     public Car getCar() {
@@ -34,6 +38,16 @@ public class Employee {
 
     public int getAge() {
         return age;
+    }
+
+    @PostConstruct
+    public void init() {
+        System.out.println("Employee: init method");
+    }
+
+    @PreDestroy
+    public void destroy() {
+        System.out.println("Employee: destroy method");
     }
 
     public String introduce() {
